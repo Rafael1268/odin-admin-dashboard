@@ -25,6 +25,11 @@ h1 {
   grid-row-end: 3;
 }
 
+.navbar {
+  position: sticky;
+  top: 25px;
+}
+
 .nav a {
   color: white;
   text-decoration: none;
@@ -167,10 +172,9 @@ h1 {
 }
 
 .projects {
-  grid-row-start: 1;
-  grid-row-end: 3;
   display: grid;
-  grid-template: repeat(3, 190px) / 1fr 1fr;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 50px;
   margin: 35px;
 }
@@ -180,6 +184,9 @@ h1 {
   color: white;
   font-size: 24px;
   position: absolute;
+}
+
+.projects h3 {
   top: 250px;
 }
 
@@ -219,10 +226,20 @@ h1 {
   margin: 0 6px;
 }
 
+/* Sidebar */
+.sidebar-container {
+  position: sticky;
+  top: 25px;
+}
+
 .announcements {
   height: 315px;
   margin: 0 35px;
   margin-top: 35px;
+}
+
+.announcements h3 {
+  top: -5px;
 }
 
 #announcement2 {
@@ -247,6 +264,7 @@ h1 {
 .friends {
   height: 285px;
   margin: 35px;
+  margin-top: 75px;
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr
 }
@@ -255,7 +273,7 @@ h1 {
   color: white;
   font-size: 24px;
   position: absolute;
-  top: 625px;
+  top: 385px;
 }
 
 .friend {
